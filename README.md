@@ -41,13 +41,13 @@ sudo apt install phpunit
 Pobranie repozytorium z github:
 
 ```
-git clone https://github.com/pkochany/RssToXmlDownload.git
+git clone https://github.com/pkochany/rss_to_xml_download.git
 ```
 
 Wejście do katalogu:
 
 ```
-cd RssToXmlDownload
+cd rss_to_xml_download
 ```
 
 Instalacja pakietów composera:

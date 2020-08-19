@@ -1,0 +1,26 @@
+{
+    "name": "pkochany/rss-to-xml-download",
+    "description": "RSS to XML download program",
+    "keywords": ["RSS download"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Piotr Kochany",
+            "email": "pkochany@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "dg/rss-php": "^1.4",
+        "phpunit/phpunit": ">=9.2.2"
+    },
+    "require-dev": {
+        "mockery/mockery": "dev-master@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "RssToXmlDownload\\": ["src", "tests"]
+        }
+    }
+}

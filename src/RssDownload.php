@@ -1,8 +1,7 @@
 <?php
 
 
-namespace RssToXmlDownload
-;
+namespace RssToXmlDownload;
 
 require 'vendor/dg/rss-php/src/Feed.php';
 use Feed;

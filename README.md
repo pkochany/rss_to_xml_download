@@ -1,77 +1,86 @@
-#### Instrukcja instalacji.
+#### Instalation.
 
-*Testowane na Linux Ubuntu 20.04 LTS.*
+*Testing on Linux Ubuntu 20.04.*
 
-Zainstalowanie cli php:
+Install PHP cli:
 
 ```
 sudo apt install php7.4-cli
 ```
 
-Informacyjnie: sprawdzenie wersji php:
+Make sure it was properly installed:
 
 ```
 php -v
 ```
 
-Zainstalowanie composera:
+Install composer:
 
 ```
 sudo apt install composer
 ```
 
-Zainstalowanie simple xml:
+Install simple xml:
 
 ```
 sudo apt install php7.4-xml
 ```
 
-Zainstalowanie gita:
+Install git:
 
 ```
 sudo apt install git
 ```
 
-Zainstalowanie phpunit:
+Install phpunit if you want to run tests:
 
 ```
 sudo apt install phpunit
 ```
 
-Pobranie repozytorium z github:
+Download repository:
 
 ```
 git clone https://github.com/pkochany/rss_to_xml_download.git
 ```
 
-Wejście do katalogu:
+Enter the location:
 
 ```
 cd rss_to_xml_download
 ```
 
-Instalacja pakietów composera:
+Install composer packages:
 
 ```
 composer install
 ```
 
-Użycie jednego z 2 poleceń:
+
+
+#### Usage.
+
+You can use one of two commands. "simple" will overwrite existing csv file:
 
 ```
 php src/console.php csv:simple <URL> <SRC>
 ```
 
-lub
+"extended" will append to the existing csv file.
 
 ```
 php src/console.php csv:extended <URL> <SRC>
 ```
 
-testowanie
+Testing:
 
 ```
 vendor/bin/phpunit
 ```
 
-zakładam że kolumna creator ma zawierać treść itemu RSS.
+My sample command I wrote for testing using random rss sample feed:
+
+```
+php src/console.php csv:simple https://feedforall.com/sample.xml ~/Pobrane/test.csv
+```
+
